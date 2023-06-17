@@ -1,0 +1,15 @@
+.idea
+*.iml
+out
+gen
+build
+dist
+
+package
+build.properties
+*~
+.gradle
+rebel.xml
+
+# Dev
+lib-tmp*
