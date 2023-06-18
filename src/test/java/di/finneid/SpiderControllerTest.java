@@ -22,7 +22,7 @@ class SpiderControllerTest {
 				NullPointerException.class
 		).isThrownBy( () -> {
 
-			c.hentTidsstempel();
+			c.helsesjekk();
 		});
 	}
 
@@ -32,7 +32,7 @@ class SpiderControllerTest {
 
 		long c2 = System.currentTimeMillis();
 
-		long retVal = Long.valueOf( c.hentTidsstempel() );
+		long retVal = Long.valueOf( c.helsesjekk() );
 
 		assertThat(retVal).isGreaterThanOrEqualTo(retVal);
 	}

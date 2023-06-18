@@ -1,5 +1,6 @@
 package di.finneid.filoperasjoner;
 
+import di.finneid.api.Koordinat;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

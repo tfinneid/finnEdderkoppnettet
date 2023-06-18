@@ -1,4 +1,4 @@
-package di.finneid.filoperasjoner;
+package di.finneid.api;
 
 public record Koordinat(double breddegrad, double lengdegrader) {
 

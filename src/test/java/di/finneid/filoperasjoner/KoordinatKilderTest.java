@@ -1,5 +1,6 @@
 package di.finneid.filoperasjoner;
 
+import di.finneid.api.Koordinat;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
