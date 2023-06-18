@@ -1,4 +1,4 @@
-package di.finneid;
+package di.finneid.oppstart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

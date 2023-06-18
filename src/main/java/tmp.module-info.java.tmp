@@ -1,0 +1,12 @@
+
+
+/**
+ * Dette er en eksempel definisjon, hver pakke under *di.finneid* simulerer separate moduler,
+ * med internedelajer i subpakker i modulen og root oakken i hver modul som grensesnittet til modulen
+ */
+
+// TODO fullfør moduldeklarasjoner
+
+module filoperasjoner {
+    exports di.finneid.filoperasjoner;
+}
