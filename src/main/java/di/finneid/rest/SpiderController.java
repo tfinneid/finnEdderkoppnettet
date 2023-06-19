@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-// TODO: Finn Fem Feil: I siste liten, finner ikke boot disse mappingene lenger...
-
 @RestController
 public class SpiderController {
 

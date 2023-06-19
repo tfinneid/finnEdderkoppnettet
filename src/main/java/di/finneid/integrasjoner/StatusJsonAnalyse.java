@@ -7,7 +7,7 @@ import di.finneid.api.Sesjonsstatus;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/** Pakke nivå for å simulerer java moduler */
+/** Pakke nivå for å simulere java moduler */
 class StatusJsonAnalyse {
 
     private static final Logger log = LogManager.getLogger(StatusJsonAnalyse.class);
