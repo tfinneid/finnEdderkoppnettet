@@ -24,7 +24,7 @@ I denne oppgaven kan man gå rett på systemdesignet. Arktiekturen består i all
 java modularisering, som også kan benevnes som delsystemer som et perspektiv for reelle systemer.
 
 Grensesnittet i delsystemene og samarbeid dem i mellom for å beskrive systemet som helhet, blir 
-ikke tillagt vesentlig vekt i eventuell arkitekturen for prototypen. 
+ikke tillagt vesentlig vekt i eventuell arkitektur for prototypen. 
 
 ### Systemdesignet
 
@@ -32,7 +32,7 @@ Hver hovedpakke i java, representerer i denne løsnignen en potensiell java modu
 avhengig av realistisk funksjon og størrelse. 
 
 Det er er ikke lagt vekt på ekte teknisk modularisering, ei heller alle arkitektur, systemdesign eller domenedesign
-spørsmål som ville vært naturlig å vurdere, da java pakker dekker formåler for denne prototypen. Det er mer ment for å
+spørsmål som ville vært naturlig å vurdere, da java pakker dekker formålet for denne prototypen. Det er mer ment for å
 belyse områdene.
 
 #### Gjennomføringen
@@ -42,7 +42,7 @@ gjennomføringen, **og forklarer hvis detaljer i implementasjonen ikker er gjenn
 
 Kravspspesifikasjonen er delvis uklar og tolkes som en simulering av reelle kravspesifikasjoner, dvs som et første utkast fra forretning. Prosessen er da å gå i samtaler med forretning, for iterativ utdypning og implementasjon av løsningen.
 
-**For denne prototype er det derfor tatt visse beslutninger i designet og implementasjonen, uten videre konsultasjon  (med forretning).**
+**For denne prototypen er det derfor tatt visse beslutninger i designet og implementasjonen, uten videre konsultasjon  (med forretning).**
 
 
 
@@ -100,7 +100,7 @@ Alterntativt kan følgende brukes, hvis Gradle 7.6.1+ allerede er installert lok
 ### Bygging av prosjeket
 
 Bygging av prosjektet innebærer kompilering, kjøring av tester og konstruksjon av en eksekverbar jar fil. 
-Det er ikke nødvendig å kjøre har filen manuelt, bare bruk "bootRun" kommandoen i stedet.
+Det er ikke nødvendig å kjøre jar filen manuelt, bruk heller gralde sin "bootRun" kommando i stedet.
 Argumentet "-x test" fører til at testene ikke blir kjørt. Men de blir fremdeles kompilert.
 
     $ gradle(w) clean build [-x test]
