@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attestering</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Calibri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="attest-design.css"/>
+
+    <script src="attestering.js"></script>
+</head>
+
+<body class="hoved">
+
+<!-- TODO
+        - sett fast bredde på viewporten og plasser viewporten i henhold, blir annerleedes på faktsike sier
+        - sentrere skjemaet på skjermen? Noen bruker veldig store skjermer og det er kanskje bedre å
+          sentrere eller delvis sentrere/flytte på det avhengig av størrelsen på nettleren
+        - bruk flowing e.l. design slik at det kan justere seg noe etter størrelsen på nettleservinduet
+-->
+
+<div>
+<!--    <div class="header">-->
+<!--        <img src="pasientreiser_logo.png" />-->
+<!--    </div>-->
+
+    <div class="tittel1">
+    Reiseattest for bruk av egen bil/bli kjørt
+    </div>
+
+    <!-- TODO litt mer luft mellom linjene, og kanskje bokstavene -->
+    <div class="ingress">
+        Les mer om hva du må være <br>oppmerksom på når du oppretter<br>en periodeattest for bruk av egen <br>bil til pasient
+    </div>
+
+    <div class="attest_detaljer">
+        <div class=personer>
+            <table class="personer">
+                <tr><td class="feltnavn">Fødselsnummer:</td><td><input type="text" size="30" placeholder="19982734"></td></tr>
+                <tr><td class="feltnavn">Navn:</td><td><input type="text"  size="30" placeholder="Fetter Anton"></td></tr>
+                <tr><td class="feltnavn">Addresse:</td><td><input type="text"  size="30" placeholder="Andebyveien 234"></td></tr>  <!-- TODO denne må kanskje utvides til å dekke flere detaljer-->
+                <tr><td class="feltnavn">Ansvarlig rekvirent:</td><td><input type="text" size="30" placeholder="Dr Skrue"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="mer_info">
+        For mer informasjon om vurdering av varighet på <br>
+        attest, håndtering av reisebestilling for pasient med <br>
+        tidsbestemt attest, spesielle behov og<br>
+        kommunekryssende turer i primærhelsetjenesten
+    </div>
+    <div>
+        <span>
+            <button name="aksepter" type="submit" class="aksepter" onclick="send_inn_skjemaet()">Opprett dokumentasjon</button>  <!-- formtarget/form = form_owner: knytter knappen til et utfylt skjema, som sendes automatisk når knappen trykkes-->
+            <button name="avbryt" type="button" class="avbryt" onclick="avbryt_skjemaet()">Avbryt</button> <!-- Avbryt bør bare tømme skjemaet via javascript og eventuelt gå til hovedsiden igjen-->
+        </span>
+    </div>
+
+</div>
+
+</body>
+</html>

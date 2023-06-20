@@ -24,11 +24,11 @@ public class SpiderApplication {
 
 	// TODO fiks feilen: Boot finner ikke disse bønnene
 	//      har nok med at dette skjer i @SpringBootApplication kontekst
-//	@Autowired
-//	private SpiderAPI spiderAPI;
+	@Autowired
+	private SpiderAPI spiderAPI;
 
-//	@Autowired
-//	private DataLager dataLager;
+	@Autowired
+	private DataLager dataLager;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpiderApplication.class, args);
@@ -48,8 +48,8 @@ public class SpiderApplication {
 				System.exit(-3);
 			}
 
-			SpiderAPI spiderAPI = new SpiderAPI();
-			DataLager dataLager = new DataLager();
+//			SpiderAPI spiderAPI = new SpiderAPI();
+//			DataLager dataLager = new DataLager();
 
 			if (!spiderAPI.opprettSesjon()) {
 				log.warn("Klarer ikke å opprette sesjon.... Avslutter fordi vi mangler feilhåndteringslogikk");
